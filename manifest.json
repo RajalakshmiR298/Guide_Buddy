@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GuideBuddy",
+  "version": "1.0",
+  "description": "A prototype extension that guides users inside Google Keep",
+
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://keep.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "action": {
+    "default_title": "GuideBuddy"
+  }
+}
