@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guide Buddy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <h2>Guide Buddy</h2>
+
+  <input 
+    id="taskInput"
+    type="text"
+    placeholder="Ask me to guide a task..."
+  />
+
+  <button id="guideBtn">Guide Me</button>
+
+  <div id="loading" class="hidden">
+    Guiding...
+  </div>
+
+  <div id="stepBox" class="hidden">
+    <p id="stepText"></p>
+    <p id="progressText"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
